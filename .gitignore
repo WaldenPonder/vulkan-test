@@ -1,3 +1,4 @@
 x64
 /.vs/vulkan-test/v16/*.db
 .vs
+/Debug
