@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E0AA31F-96ED-33D8-B2EF-42100002DD19}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>base</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\LearnVulkan\Vulkan\base\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">base.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">base</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\LearnVulkan\Vulkan\base\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">base.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">base</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\LearnVulkan\Vulkan\base\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">base.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">base</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\LearnVulkan\Vulkan\base\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">base.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">base</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR="E:/LearnVulkan/Vulkan//data/";CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR=\"E:/LearnVulkan/Vulkan//data/\";CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;NDEBUG;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR="E:/LearnVulkan/Vulkan//data/";CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;NDEBUG;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR=\"E:/LearnVulkan/Vulkan//data/\";CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;NDEBUG;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR="E:/LearnVulkan/Vulkan//data/";CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;NDEBUG;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR=\"E:/LearnVulkan/Vulkan//data/\";CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;NDEBUG;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR="E:/LearnVulkan/Vulkan//data/";CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;VK_USE_PLATFORM_WIN32_KHR;NOMINMAX;_USE_MATH_DEFINES;NDEBUG;_CRT_SECURE_NO_WARNINGS;VK_EXAMPLE_DATA_DIR=\"E:/LearnVulkan/Vulkan//data/\";CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\LearnVulkan\Vulkan\external;E:\LearnVulkan\Vulkan\external\glm;E:\LearnVulkan\Vulkan\external\gli;E:\LearnVulkan\Vulkan\external\imgui;E:\LearnVulkan\Vulkan\external\tinygltf;E:\LearnVulkan\Vulkan\external\ktx\include;E:\LearnVulkan\Vulkan\external\ktx\other_include;E:\LearnVulkan\Vulkan\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\LearnVulkan\Vulkan\base\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/LearnVulkan/Vulkan/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/LearnVulkan/Vulkan -BE:/LearnVulkan/Vulkan --check-stamp-file E:/LearnVulkan/Vulkan/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\LearnVulkan\Vulkan\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/LearnVulkan/Vulkan/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/LearnVulkan/Vulkan -BE:/LearnVulkan/Vulkan --check-stamp-file E:/LearnVulkan/Vulkan/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\LearnVulkan\Vulkan\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/LearnVulkan/Vulkan/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/LearnVulkan/Vulkan -BE:/LearnVulkan/Vulkan --check-stamp-file E:/LearnVulkan/Vulkan/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\LearnVulkan\Vulkan\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/LearnVulkan/Vulkan/base/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/LearnVulkan/Vulkan -BE:/LearnVulkan/Vulkan --check-stamp-file E:/LearnVulkan/Vulkan/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\LearnVulkan\Vulkan\base\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\imgui\imgui.cpp" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\imgui\imgui_demo.cpp" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\imgui\imgui_draw.cpp" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanAndroid.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanAndroid.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanBuffer.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanBuffer.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanDebug.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanDebug.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanDevice.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanDevice.h" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanFrameBuffer.hpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanHeightmap.hpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanInitializers.hpp" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanRaytracingSample.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanRaytracingSample.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanSwapChain.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanSwapChain.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanTexture.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanTexture.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanTools.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanTools.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanUIOverlay.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanUIOverlay.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\VulkanglTFModel.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\VulkanglTFModel.h" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\benchmark.hpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\camera.hpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\frustum.hpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\keycodes.hpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\threadpool.hpp" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\base\vulkanexamplebase.cpp" />
+    <ClInclude Include="E:\LearnVulkan\Vulkan\base\vulkanexamplebase.h" />
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\ktx\lib\texture.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\ktx\lib\hashlist.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\ktx\lib\checkheader.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\ktx\lib\swap.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\ktx\lib\memstream.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="E:\LearnVulkan\Vulkan\external\ktx\lib\filestream.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\LearnVulkan\Vulkan\ZERO_CHECK.vcxproj">
+      <Project>{85C6D10E-82F3-3249-9E80-CAAFB6B8B698}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
